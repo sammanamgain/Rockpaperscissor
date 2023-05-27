@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RockPaperScissor</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Rock Paper Scissor</h1>
+
+    <div class="rockpaperscissor">
+      <div class="item first">
+        <button
+          onclick="
+        let a = Math.random();
+        let computermove='';
+          console.log(a);
+           // alert(a);
+            if(a<0.33){
+                computermove='rock';
+            }
+            else if(a>0.33 && a<0.66){
+                    computermove='paper';
+            }
+            else{
+                     computermove='scissor';
+            };
+
+
+            if  (computermove=='rock')
+            {
+              alert( 'Draw')
+            }
+            else if(computermove=='paper')
+            {
+              alert('You lose')
+            }
+            else if(computermove=='scissor')
+            {
+              alert('You win')
+            }
+            else{
+              alert('Error')
+            }
+
+            
+      
+        
+        
+        "
+        >
+          Rock
+        </button>
+      </div>
+      <div class="item second">
+        <button
+          onclick="
+        a = Math.random();
+        computermove='';
+          console.log(a);
+           // alert(a);
+            if(a<0.33){
+                computermove='rock';
+            }
+            else if(a>0.33 && a<0.66){
+                    computermove='paper';
+            }
+            else{
+                     computermove='scissor';
+            };
+
+
+            if  (computermove=='rock')
+            {
+              alert( ' You Win')
+            }
+            else if(computermove=='paper')
+            {
+              alert('Draw')
+            }
+            else if(computermove=='scissor')
+            {
+              alert('You Lose')
+            }
+            else{
+              alert('Error')
+            }
+
+            
+      
+        
+        
+        "
+        >
+          Paper
+        </button>
+      </div>
+      <div class="item third">
+        <button
+          onclick="
+    a = Math.random();
+    computermove='';
+          console.log(a);
+           // alert(a);
+            if(a<0.33){
+                computermove='rock';
+            }
+            else if(a>0.33 && a<0.66){
+                    computermove='paper';
+            }
+            else{
+                     computermove='scissor';
+            };
+
+
+            if  (computermove=='rock')
+            {
+              alert( 'Youw Win')
+            }
+            else if(computermove=='paper')
+            {
+              alert('You Draw')
+            }
+            else if(computermove=='scissor')
+            {
+              alert('You Lose')
+            }
+            else{
+              alert('Error')
+            }
+
+            
+      
+        
+        
+        "
+        >
+          Scissor
+        </button>
+      </div>
+    </div>
+    <div class="flexparagraph"><p>Select the one options</p></div>
+  </body>
+</html>
