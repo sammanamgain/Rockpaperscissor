@@ -14,20 +14,9 @@
       <div class="item first">
         <button
           onclick="
-        let a = Math.random();
+       
         let computermove='';
-          console.log(a);
-           // alert(a);
-            if(a<0.33){
-                computermove='rock';
-            }
-            else if(a>0.33 && a<0.66){
-                    computermove='paper';
-            }
-            else{
-                     computermove='scissor';
-            };
-
+       computermove=  generator();
 
             if  (computermove=='rock')
             {
@@ -57,19 +46,11 @@
       <div class="item second">
         <button
           onclick="
-        a = Math.random();
+     
         computermove='';
-          console.log(a);
+       computermove=   generator();
            // alert(a);
-            if(a<0.33){
-                computermove='rock';
-            }
-            else if(a>0.33 && a<0.66){
-                    computermove='paper';
-            }
-            else{
-                     computermove='scissor';
-            };
+         
 
 
             if  (computermove=='rock')
@@ -100,19 +81,10 @@
       <div class="item third">
         <button
           onclick="
-    a = Math.random();
+
     computermove='';
-          console.log(a);
-           // alert(a);
-            if(a<0.33){
-                computermove='rock';
-            }
-            else if(a>0.33 && a<0.66){
-                    computermove='paper';
-            }
-            else{
-                     computermove='scissor';
-            };
+    generator();
+        
 
 
             if  (computermove=='rock')
@@ -142,5 +114,17 @@
       </div>
     </div>
     <div class="flexparagraph"><p>Select the one options</p></div>
+    <script>
+      function generator() {
+        a = Math.random();
+        if (a < 0.33) {
+          return (computermove = "rock");
+        } else if (a > 0.33 && a < 0.66) {
+          return (computermove = "paper");
+        } else {
+          return (computermove = "scissor");
+        }
+      }
+    </script>
   </body>
 </html>
